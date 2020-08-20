@@ -16,6 +16,7 @@ public class Q5 {
         String DecimalToHex = Util.DecimalToHex(d);
         System.out.println(d + "=> (DecimalToHex) " + DecimalToHex);
         System.out.println();
+        
 
         System.out.println("十六进制， 转二， 转十");
         String h = "10";

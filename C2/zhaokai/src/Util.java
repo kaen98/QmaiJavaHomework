@@ -3,6 +3,7 @@ import org.omg.CORBA.PUBLIC_MEMBER;
 import java.nio.charset.StandardCharsets;
 
 public class Util {
+    
     public static int stringToInt(String s) {
         return Integer.parseInt(s);
     }

@@ -1,5 +1,6 @@
 public class Q4 {
     public static void main(String[] args) {
+    	
         // Ascii 转 char
         int asscii = 0x0061;
         System.out.println(Util.ASCIIToChar(asscii));
