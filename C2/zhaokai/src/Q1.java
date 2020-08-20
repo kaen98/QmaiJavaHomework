@@ -5,6 +5,7 @@ public class Q1 {
         for (int i : intList) {
             // byte数据
             byte b = (byte)i;
+            
             // 二进制数据
             String s = Integer.toBinaryString(b);
 

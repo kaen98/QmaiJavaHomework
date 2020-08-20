@@ -16,8 +16,10 @@ public class Q3 {
         System.out.println(stringToDouble);
         System.out.println(Arrays.toString(stringToByteArray));
 
+
         String byteArrayToString = Util.byteArrayToString(stringToByteArray);
         System.out.println(byteArrayToString);
+
 
         String intToString = Util.intToString(stringToInt);
         System.out.println(intToString);
