@@ -2,6 +2,7 @@ public class Q1
 {
     public static void main(String[] args)
     {
+        System.out.println(getDiscount(0, 500));
         System.out.println(getDiscount(1, 100));
         System.out.println(getDiscount(4, 100));
     }
