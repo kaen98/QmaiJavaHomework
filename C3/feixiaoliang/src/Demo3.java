@@ -6,7 +6,7 @@
  */
 public class Demo3 {
     public static void main(String[] args) {
-        //开始时间
+        //开始时间（如果要控制时间精度，可调用System.nanoTime()，此时间单位ns）
         long startTime = System.currentTimeMillis();
         //结束时间
         long endTime = 0;
