@@ -58,11 +58,12 @@ public class Q1
 ```
 
 ### Q2. 写一段程序代码，利用Random类生成1个1000以内的随机数字，猜出这个数字，考虑尽可能的降低时间复杂度。生成随机数字代码如下:
+```
 Random random = new Random();
 int num = random.nextInt(1000);
 ```
-import java.util.Random;
 
+```
 public class Q2
 {
     public static void main(String[] args)

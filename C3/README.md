@@ -1,3 +1,6 @@
+![流程控制](https://github.com/kaen98/QmaiJavaHomework/blob/master/images/c3.png)
+
+
 ### Q1. 写一段会员打折的程序代码，规则如下：
 1级会员消费满100打9折；
 2级会员消费满100打8折，满200打7.5折
@@ -8,9 +11,9 @@
 ```
 
 ### Q2. 写一段程序代码，利用Random类生成1个1000以内的随机数字，猜出这个数字，考虑尽可能的降低时间复杂度。生成随机数字代码如下:
+```java
 Random random = new Random();
 int num = random.nextInt(1000);
-```
 
 ```
 
