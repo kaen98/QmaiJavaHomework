@@ -1,4 +1,3 @@
-package com.company;
 
 import java.math.BigInteger;
 import java.util.Calendar;
@@ -15,9 +14,11 @@ public class Two {
         System.out.println(discount.get(1000));
 
         //第二题
+        Random r = new Random();
         Guess g = new Guess();
-        g.set();
-        g.get();
+        int num1 = r.nextInt(1000);
+        System.out.println("随机值："+num1);
+        System.out.println("最终结果："+g.get(num1));
 
         //第四题
         SuShuo s = new SuShuo();
@@ -85,12 +86,32 @@ class Guess {
         System.out.println("随机值num5：" + this.num5);
     }
 
-    public void get(){
-        System.out.println("猜出num1：" + (1000 - (1000 - this.num1)));
-        System.out.println("猜出num2：" + (1000 - (1000 - this.num2)));
-        System.out.println("猜出num3：" + (1000 - (1000 - this.num3)));
-        System.out.println("猜出num4：" + (1000 - (1000 - this.num4)));
-        System.out.println("猜出num5：" + (1000 - (1000 - this.num5)));
+    public int get(int random){
+        int x1 = 0;
+        int num = 0;
+        int min = 0;
+        int max = 1000;
+        int b = 1000;
+        while(b != random) {
+            num+=1;
+            if (b > random) {
+                max = b;
+                x1 = max-min;
+            } else {
+                min = b;
+                x1 = max-min;
+                if (x1 ==1) {
+                    b=min;
+                    break;
+                }
+            }
+            b = min + (int) (x1 / 2);
+            /*System.out.println("b数值："+b);
+            System.out.println("min数值："+min);
+            System.out.println("max数值："+max);*/
+        }
+        System.out.println("总计循环次数："+num);
+        return b;
     }
 }
 
