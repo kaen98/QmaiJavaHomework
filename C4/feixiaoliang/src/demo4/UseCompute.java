@@ -6,6 +6,6 @@ package demo4;
  */
 public class UseCompute {
     public void useCom(Compute com, int one, int two) {
-        System.out.println("计算结果：" + com.computer(one, two));
+        System.out.println(one + com.getOperator() + two + "=" + com.computer(one, two));
     }
 }

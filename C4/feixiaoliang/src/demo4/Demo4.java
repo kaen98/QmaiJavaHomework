@@ -17,28 +17,32 @@ public class Demo4 {
         System.out.println("请输入第二个数");
         String two = input.next();
 
-        Compute compute;
+        Compute compute = null;
         UseCompute useCompute = new UseCompute();
         switch (operator) {
             case "+":
                 compute = new Addition();
-                useCompute.useCom(compute, Integer.parseInt(one), Integer.parseInt(two));
                 break;
             case "-":
                 compute = new Subtraction();
-                useCompute.useCom(compute, Integer.parseInt(one), Integer.parseInt(two));
                 break;
             case "*":
                 compute = new Multiplication();
-                useCompute.useCom(compute, Integer.parseInt(one), Integer.parseInt(two));
                 break;
             case "/":
-                compute = new Division();
-                useCompute.useCom(compute, Integer.parseInt(one), Integer.parseInt(two));
+                if ("0".equals(two)) {
+                    System.out.println("警告，分母不能为0！");
+                } else {
+                    compute = new Division();
+                }
                 break;
             default:
                 System.out.println("错误的运算符");
                 break;
+        }
+
+        if (compute != null) {
+            useCompute.useCom(compute, Integer.parseInt(one), Integer.parseInt(two));
         }
     }
 }

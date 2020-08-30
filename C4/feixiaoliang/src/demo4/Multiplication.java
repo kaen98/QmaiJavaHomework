@@ -5,8 +5,15 @@ package demo4;
  * @date 2020/8/30 4:25 下午
  */
 public class Multiplication implements Compute {
+    public final String operator = "*";
+
     @Override
     public int computer(int n, int m) {
         return n * m;
+    }
+
+    @Override
+    public String getOperator() {
+        return operator;
     }
 }

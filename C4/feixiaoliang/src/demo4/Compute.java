@@ -6,4 +6,6 @@ package demo4;
  */
 public interface Compute {
     int computer(int n, int m);
+
+    String getOperator();
 }
