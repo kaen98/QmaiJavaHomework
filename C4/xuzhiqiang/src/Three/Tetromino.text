@@ -1,0 +1,23 @@
+public class Tetromino {
+    protected int move(int x) {
+        return 0;
+    }
+}
+class T extends Tetromino {
+     <插入代码>
+}
+
+ 在<插入代码>处填入选项中的代码，使T类没有编译错误的是（）
+
+        A.public int move(int x) { return 0; }
+
+        B.private int move(int x) { return 0; }
+
+        C.private int move(long x) { return 0; }
+
+        D.protected long move(int x) { return 0; }
+
+
+答案：AC
+
+A：满足重写   C：满足重载
