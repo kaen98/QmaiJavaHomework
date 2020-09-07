@@ -1,5 +1,5 @@
 package C5;
-class Four {
+class Q1 {
     public static void main(String[] args) {
         //作业一
         Exc a = new Exc();
