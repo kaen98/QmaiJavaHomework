@@ -23,7 +23,7 @@ public class Demo4 {
 
     public static String test(String message){
         try {
-            throw  new Exception("try异常抛出");
+            throw  new Exception(message);
         } catch (Exception e) {
             return e.getMessage();
         }
