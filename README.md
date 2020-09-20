@@ -10,6 +10,8 @@
 
 ### C5 - 异常
 
-### C6 - string 字符串
+### C6 - Object及其类
+
+### C7 - String
 
 ![方舟队Logo](https://github.com/kaen98/QmaiJavaHomework/blob/master/images/logo.png)
