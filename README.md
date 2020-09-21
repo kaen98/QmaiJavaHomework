@@ -14,4 +14,6 @@
 
 ### C7 - String
 
+### C8 - Date Math
+
 ![方舟队Logo](https://github.com/kaen98/QmaiJavaHomework/blob/master/images/logo.png)
