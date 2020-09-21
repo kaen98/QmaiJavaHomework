@@ -1,0 +1,10 @@
+5. 字符串可以直接用加号进行拼接，但是也有几种不同的情况. 以下不同情况的拼接,分别创建了几个对象?
+1） String str = "hello" + "world";
+回答：1个
+解释：字符串拼接后创建一个helloworld在常量池
+2）String str1 = "hello";   String str2 = str1 + "world";
+回答：共三个对象
+解释：首先会有一个"hello"在常量池中，然后有个"world"在常量池，第三行代码会调用append方法，在堆中生成一个"helloworld"。所以总共有3个对象。
+3）String str1 = new String("hello"); String str2 = str1 + "world";
+回答：4个对象
+首先会在堆中创建一个"hello"，再把"hello"添加到常量池；然后会把"world"添加到常量池，拼接的时候，会在堆中创建一个"helloworld"。所以这两条语句总共创建了4个对象，堆中的"hello"、"helloworld"和常量池中的"hello"、"world"。
