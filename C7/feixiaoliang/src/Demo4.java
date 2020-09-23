@@ -15,10 +15,13 @@ public class Demo4 {
 
         //第一种方法
         String s = "113@ ere qqq yyui";
-        System.out.println(explode(" ", s));
+        String string = s.replace("@","");
+        for (String st:explode(" ", string)) {
+            System.out.println(st);
+        }
 
         //第二种方法
-        String[] strArray = s.split(" ");
+        String[] strArray = string.split(" ");
         for (String st:strArray) {
             System.out.println(st);
         }
