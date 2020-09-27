@@ -11,13 +11,6 @@ public class Demo5 {
         Object[] formArray = {1, 2, 3};
         Object[] toArray = {11, 12, 13};
 
-//        System.arraycopy(formArray, 1, toArray, 3, 2);
-//        Object[] a = arraycopy(formArray, 1, toArray, 2, 2);
-//
-//        for (Object num : a) {
-//            System.out.println(num);
-//        }
-
         System.arraycopy(formArray, 1, toArray, 2, 1);
 
         for (Object nums : toArray) {
@@ -50,7 +43,6 @@ public class Demo5 {
         for (int n = 0; n < length; n++) {
             newArray[destPos + n] = src[srcPos + n - 1];
         }
-
 
         return newArray;
     }
