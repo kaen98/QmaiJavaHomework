@@ -12,8 +12,8 @@ public class Q1 {
         list[4] = "技术中心";
         list[5] = "产品中心";
 
-        for(String row : list) {
-            System.out.println(row);
+        for (int i = 0; i < list.length; i++) {
+            System.out.println(i + ":" + list[i]);
         }
     }
 }
