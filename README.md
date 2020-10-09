@@ -16,4 +16,8 @@
 
 ### C8 - Date Math
 
+### C9 - 数组
+
+### C10 - List 集合
+
 ![方舟队Logo](https://github.com/kaen98/QmaiJavaHomework/blob/master/images/logo.png)
