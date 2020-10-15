@@ -7,12 +7,17 @@ public class Q1 {
 
         HashMap<String, Integer> wordMap = new HashMap<>();
         for (String word : wordList) {
-            if (wordMap.containsKey(word)) {
-                int wordCount = wordMap.get(word);
-                wordMap.replace(word, wordCount + 1);
-            } else {
-                wordMap.put(word, 1);
-            }
+
+            // 统计方法一
+//            if (wordMap.containsKey(word)) {
+//                int wordCount = wordMap.get(word);
+//                wordMap.replace(word, wordCount + 1);
+//            } else {
+//                wordMap.put(word, 1);
+//            }
+
+            // 统计方法二
+            wordMap.put(word, wordMap.getOrDefault(word, 0) + 1);
         }
 
         for (String word : wordMap.keySet()) {
