@@ -18,6 +18,11 @@ public class Demo4 {
         System.out.println("复制用时"+(endTime-startTime)+"ms");
     }
 
+    /**
+     * 复制文件
+     * @param from  源文件
+     * @param to    目标文件
+     */
     public static void copyFile(String from, String to){
         InputStream inputStream = null;
         OutputStream outputStream = null;
