@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TestClass {
 
-    public static <T extends Fruit> void handleFruit(ArrayList<Fruit> fruits) {
+    public static <T extends Fruit> void handleFruit(ArrayList<T> fruits) {
         System.out.println(fruits);
     }
 
